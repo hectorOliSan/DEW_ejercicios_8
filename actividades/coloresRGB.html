@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colores RGB</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <!--<link rel="stylesheet" href="../css/bootstrap.css" />-->
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div id="mensaje"></div>
+      <div class="m-0 d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">Colores RGB:</p>
+        <button
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+          onclick="descripcion()"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button
+              title="cerrar"
+              class="btn btn-secondary btn-sm"
+              onclick="cerrar()"
+            >
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Colores RGB:</b> La página coloresRGB.html dispone de los tres
+            hiperenlaces que se ven en la figura. El primero lanzará un popup
+            con la página selectorRGB.html también mostrada en la figura.
+            <br />
+            La lista (select) permite seleccionar los atributos bgColor,
+            fgColor, LinkColor, aLinkColor y vLinkColor y en los tres cuadros de
+            texto (input type="text") se introducirán las proporciones de rojo,
+            azul y verde para el color del atributo seleccionado en el paso
+            anterior.
+            <br />
+            El programa deberá controlar que los valores introducidos están
+            entre 0 y 255, posteriormente convertirlos a hexadecimal y
+            finalmente cambiar el color del atributo seleccionado en la ventana
+            coloresRGB.html
+          </p>
+        </dialog>
+      </div>
+
+      <p class="p-3 my-2 fs-4 font-monospace text-center">
+        Texto de muestra para comprobar el color del primer plano
+      </p>
+
+      <a href="#" id="selector"> Abrir selector de color </a>
+      <br /><br />
+      <a href="#">Vínculo visitado</a>
+      <br /><br />
+      <a href="#">Vínculo sin visitar</a>
+      <br /><br />
+      <div class="mt-4 d-flex justify-content-center">
+        <a class="col-4 mx-2 btn btn-secondary" href="../index.html">Volver</a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/colores.js"></script>
+  </body>
+</html>

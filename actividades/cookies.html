@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de Visitas</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div class="m-0 d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">
+          Contador de Visitas:
+        </p>
+        <button
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+          onclick="descripcion()"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button
+              title="cerrar"
+              class="btn btn-secondary btn-sm"
+              onclick="cerrar()"
+            >
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Contador de Visitas:</b> En la web de la figura está incluido el
+            archivo cookies.js con una función para grabar una cookie, otra para
+            leerla y finalmente otra para borrar la cookie demandada.
+            <br />
+            El programa comprobará si existe la cookie contador_Visitas y leerá
+            su valor. Si no existe presentará el mensaje "Bienvenido a la página
+            de las cookies" y en caso contrario "Esta es su visita nº n". El
+            valor de n se incrementará en cada visita.
+            <br />
+            Al pulsar el botón BORRAR COOKIE se eliminará la cookie del
+            ordenador de usuario.
+          </p>
+        </dialog>
+      </div>
+
+      <p id="mensaje" class="my-3 fs-5 font-monospace"></p>
+      <p class="my-3 col-12 text-center fs-2 font-monospace bg-light rounded">
+        COOKIES
+      </p>
+      <p class="my-3 text-center fs-5 font-monospace">
+        Página de ejemplos de visitas a una página
+      </p>
+      <button id="borrarCookie" class="my-4 d-block mx-auto btn btn-danger">
+        BORRAR COOKIE
+      </button>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <a class="col-4 mx-2 btn btn-secondary" href="../index.html">Volver</a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/cookies.js"></script>
+  </body>
+</html>

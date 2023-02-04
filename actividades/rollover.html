@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Over</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div id="mensaje"></div>
+      <div class="m-0 d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">Roll Over:</p>
+        <button
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+          onclick="descripcion()"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button
+              title="cerrar"
+              class="btn btn-secondary btn-sm"
+              onclick="cerrar()"
+            >
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Roll Over:</b> Diseñar la web de la figura con las dos imágenes
+            primarias mostradas. Al pasar el ratón sobre la imagen superior se
+            sustituyen ambas por las secundarias también mostradas en la figura.
+            Al retirar el ratón se volverá a la situación original. Si pulsamos
+            sobre la imagen secundaria superior se cerrará la ventana.
+          </p>
+        </dialog>
+      </div>
+
+      <p class="p-3 my-2 fs-4 font-monospace text-center">
+        Demostración del efecto sustitución en imágenes
+      </p>
+
+      <div class="row">
+        <div class="col-6">
+          <img
+            id="primaria"
+            src="../img/prim-dir.gif"
+            class="my-2 img-fluid rounded mx-auto d-block"
+            alt="Imagen primaria"
+          />
+          <img
+            id="img1"
+            src="../img/prim-indir.gif"
+            class="my-2 img-fluid rounded mx-auto d-block"
+            alt="Imagen primaria"
+          />
+        </div>
+        <div class="col-6">
+          <img
+            id="secundaria"
+            src="../img/secun-dir.gif"
+            class="my-2 img-fluid rounded mx-auto d-block"
+            alt="Imagen primaria"
+          />
+          <img
+            id="img2"
+            src="../img/prim-indir.gif"
+            class="my-2 img-fluid rounded mx-auto d-block"
+            alt="Imagen primaria"
+          />
+        </div>
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <a class="col-4 mx-2 btn btn-secondary" href="../index.html">Volver</a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/rollover.js"></script>
+  </body>
+</html>

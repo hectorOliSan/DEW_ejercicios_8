@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectores RGB</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div id="mensaje"></div>
+      <p class="my-0 mx-2 fs-4 text-center font-monospace">
+        Elija un propiedad:
+      </p>
+
+      <div class="mb-3">
+        <select class="form-select form-select" id="atributo">
+          <option value="bgColor">bgColor</option>
+          <option value="fgColor">fgColor</option>
+          <option value="linkColor">linkColor</option>
+          <option value="aLinkColor">aLinkColor</option>
+          <option value="vLinkColor">vLinkColor</option>
+        </select>
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="col-2 input-group-text text-danger">Rojo (R)</span>
+        <input
+          id="red"
+          title="Rojo"
+          type="text"
+          class="form-control"
+          placeholder="0 - 255"
+        />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="col-2 input-group-text text-success">Verde (G)</span>
+        <input
+          id="green"
+          title="Verde"
+          type="text"
+          class="form-control"
+          placeholder="0 - 255"
+        />
+      </div>
+
+      <div class="input-group input-group-sm mb-3">
+        <span class="col-2 input-group-text text-primary">Azul (B)</span>
+        <input
+          id="blue"
+          title="Azul"
+          type="text"
+          class="form-control"
+          placeholder="0 - 255"
+        />
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <button id="color" class="mx-2 btn btn-primary">Cambiar color</button>
+        <button id="cerrar" class="mx-2 btn btn-secondary">Cerrar</button>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/colores2.js"></script>
+  </body>
+</html>
